@@ -1,7 +1,7 @@
 import os
 import asyncio
 import asyncpg
-from db import db
+from app.db import db
 
 
 async def run_migration(conn: asyncpg.Connection, migration: str) -> None:
